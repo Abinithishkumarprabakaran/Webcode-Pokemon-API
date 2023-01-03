@@ -1,0 +1,16 @@
+How to I process the API data!.
+
+Answer:
+
+    I'm using Async/Await function in Javascript to process the (Pokemon) API data,
+using fetch funtion, which sends a request to the API's server and retrieve data from the API server,
+fetch's output is always been in Promise, so it is much more easier to fetch the data from given API.
+
+While using Await keyword for the first in the Async Function, the output will be in promise response,
+and again using the await keyword to retrieve the data in the form of JSON format using .json(), so here it is
+easier to fetch the data and display in the UI.
+
+And the HTML elements all are written using DOM in Javascript,
+Here everything is Dynamically approached.
+
+And Here I used try and catch to handle the errors and if the image is not loaded, it'll throw a error message.

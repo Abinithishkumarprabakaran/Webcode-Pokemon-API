@@ -1,0 +1,18 @@
+h1{  
+    text-decoration-line: underline;
+}
+
+#head{
+    display: flex;
+    justify-content: center;
+}
+
+#head header img{
+    width: 150px;
+    height: 50px;
+}
+
+#foot{
+    display: flex;
+    justify-content: center;
+}
