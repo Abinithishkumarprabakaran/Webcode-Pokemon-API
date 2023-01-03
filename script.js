@@ -118,6 +118,12 @@ async function res_fetching(e){
                 image_creation.setAttribute('alt', 'Sorry!, Image is not loaded')
                 data_creation.append(image_creation)
 
+                var weight_data = document.createElement('h4')
+                weight_data.innerText = `Weight: ${url_res.weight}`
+                weight_data.setAttribute('class','weighttag')
+
+                data_creation.append(weight_data)
+
                 var ability_title = document.createElement('h4')
                 ability_title.innerText = 'Abilities:'
                 ability_title.setAttribute('class','abilitytag')
@@ -142,11 +148,7 @@ async function res_fetching(e){
                     data_creation.append(ul_tag)
                 }
 
-                var weight_data = document.createElement('h4')
-                weight_data.innerText = `Weight: ${url_res.weight}`
-                weight_data.setAttribute('class','weighttag')
 
-                data_creation.append(weight_data)
             }
             catch(e){
                 console.log("Error has occured while fetching from inside link")
@@ -183,6 +185,12 @@ async function res_fetching(e){
                     image_creation.setAttribute('alt', 'Sorry!, Image is not loaded')
                     data_creation.append(image_creation)
 
+                    var weight_data = document.createElement('h4')
+                    weight_data.innerText = `Weight: ${url_res.weight}`
+                    weight_data.setAttribute('class','weighttag')
+
+                    data_creation.append(weight_data)
+
                     var ability_title = document.createElement('h4')
                     ability_title.innerText = 'Abilities:'
                     ability_title.setAttribute('class','abilitytag')
@@ -207,11 +215,6 @@ async function res_fetching(e){
                         data_creation.append(ul_tag)
                     }
 
-                    var weight_data = document.createElement('h4')
-                    weight_data.innerText = `Weight: ${url_res.weight}`
-                    weight_data.setAttribute('class','weighttag')
-
-                    data_creation.append(weight_data)
                 }
                 catch(e){
                     console.log("Error 20 to 40 inside link")
@@ -256,6 +259,12 @@ async function res_fetching(e){
                         image_creation.setAttribute('alt', 'Sorry!, Image is not loaded')
                         data_creation.append(image_creation)
 
+                        var weight_data = document.createElement('h4')
+                        weight_data.innerText = `Weight: ${url_res.weight}`
+                        weight_data.setAttribute('class','weighttag')
+
+                        data_creation.append(weight_data)
+
                         var ability_title = document.createElement('h4')
                         ability_title.innerText = 'Abilities:'
                         ability_title.setAttribute('class','abilitytag')
@@ -279,12 +288,6 @@ async function res_fetching(e){
                             <li><p>${url_res.moves[i].move.name}</P></li>`
                             data_creation.append(ul_tag)
                         }
-
-                        var weight_data = document.createElement('h4')
-                        weight_data.innerText = `Weight: ${url_res.weight}`
-                        weight_data.setAttribute('class','weighttag')
-
-                        data_creation.append(weight_data)
                     }
                     catch(e){
                         console.log("Error 41 to 50 inside link")
